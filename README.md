@@ -1,13 +1,13 @@
 # Projet_Portail
 
 
-LeDoneche : Doneche Benjamin |
+LeDoneche : Doneche Benjamin
 
-LeJehanno : Jehanno Erwan |
+LeJehanno : Jehanno Erwan
 
-LaGomme   : Gomez Mel |
+LaGomme   : Gomez Mel
 
-LeRedon   : Redon Téo |
+LeRedon   : Redon Téo
 
 
 Sujet
