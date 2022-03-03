@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+   
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Projet Portail</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+         <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+         <!-- se connecter à la bdd --> 
+    </head>
+
+    <div class="form">
+    <h1>Generateur QR Code</h1>
+    <form method="post">
+        <input type="nom" name="nom" id="nom" placeholder="Nom" required /><br></br>
+        <input type="prenom" name="prenom" id="prenom" placeholder="Prenom" required /><br></br>
+        <input type="imat" name="imat" id="imat" placeholder="AA-123-AA" required /><br></br>
+        <input type="submit" name="formsend" id="formsend">
+        <button type="button" onclick="generateQRCode()">
+            Generer le QR Code
+        </button>
+        <h4>Le QR Code:</h4>
+    </form>
+
+    <div id="qrcode-container">
+        <div id="QRImat" class="qrcode"></div>
+    </div>
+
+    <script type="text/javascript">
+        function generateQRCode() {
+        let imat = document.getElementById("imat").value;
+        let prenom = document.getElementById("prenom").value;
+        let nom = document.getElementById("nom").value;
+        if (imat, nom, prenom) {
+            let qrcodeContainer = document.getElementById("QRImat");
+            qrcodeContainer.innerHTML = "";
+            new QRCode(qrcodeContainer, imat);
+            new QRCode({
+            text: imat,
+            width: 128,
+            height: 128,
+            colorDark: "#5868bf",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+            });
+            document.getElementById("qrcode-container").style.display = "block";
+        } else {
+            alert("Veuillez remplir tout les champs");
+        }
+        }
+    </script>
+    </div>
+
+</html>
