@@ -33,13 +33,9 @@
                  console.error(e);
             });
             
-            scanner.addEventListener('scan', function(c)){
-                    document.getDocumentById()
-                                     }
+            scanner.addListener('scan', function(c)){
+                    document.getDocumentById('text').value-c;
+                                     });
         </script>
-        
-        <p>
-            test
-        </p>
     </body>
 </html>
