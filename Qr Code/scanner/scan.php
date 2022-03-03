@@ -13,7 +13,7 @@
                 </div>
                 <div class="un">
                     <label>QR Code</label>
-                    <imput type="text" name="text" id="text" readonyy="" placeholder="scan QR Code" class="form-controle"></imput>
+                    <imput type="text" name="text" id="text" readonyy="" placeholder="scan QR Code" class="form-controle"></imput>  
                 </div>
             </div>
         </div>
@@ -34,8 +34,9 @@
             });
             
             scanner.addListener('scan', function(c)){
-                    document.getDocumentById('text').value-c;
-                                     });
+                document.getDocumentById('text').value-c;
+                document.forms[0].submit();    
+            });
         </script>
     </body>
 </html>
