@@ -1,3 +1,16 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <zbar.h>
+
+#include <opencv2/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+
+using namespace std;
+using namespace cv;
+using namespace zbar;
+
 typedef struct
 	{
 	  string type;
