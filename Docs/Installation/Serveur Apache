@@ -1,0 +1,12 @@
+
+commande:
+  sudo apt install apache2
+  
+donner des droits au dossier d’apache:
+  commande :
+    sudo chown -R pi:www-data /var/www/html/
+    sudo chmod -R 770 /var/www/html/
+    
+vérification du bon fonctionnement:
+  commande : 
+    wget -O verif_apache.html http://127.0.0.1
