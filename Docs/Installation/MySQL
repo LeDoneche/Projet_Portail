@@ -1,0 +1,18 @@
+
+installation MariaDB
+  commande :
+    sudo apt install mariadb-server php-mysql
+    
+vérification :
+  commande :
+    sudo mysql --user=root
+    
+/-----------------------------------------------------------------------/
+
+installation PHPMyAdmin
+  commande :
+    sudo apt install phpmyadmin
+    
+vérification :
+  commande :
+    sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
