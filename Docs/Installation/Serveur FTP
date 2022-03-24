@@ -1,0 +1,17 @@
+
+commande :
+  sudo apt-get install proftpd
+  
+Démarrage ProFTP :
+  standalone  
+  
+Modification du fichier proftpd.conf :
+  commande :
+    sudo nano /etc/proftpd/proftpd.conf
+    
+à ajouter à la fin du fichier.
+  DefaultRoot ~
+  AuthOrder mod_auth_file.c  mod_auth_unix.c
+  AuthUserFile /etc/proftpd/ftpd.passwd
+  AuthPAM off
+  RequireValidShell off
