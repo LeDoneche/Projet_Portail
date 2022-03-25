@@ -1,15 +1,24 @@
+
 #include <iostream>
 #include <algorithm>
 #include <vector>
-#include <zbar.h>
+#include "/usr/include/zbar.h"
 
 #include <opencv2/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 
+#include <QtCore/QCoreApplication>
+
+#include <QtSql/QSqlDatabase>
+#include <QtSql/QSql>
+#include "/home/snir/Documents/QT project/Projet/PROJET/libs/sqlrequest.h"
+
+
 using namespace std;
 using namespace cv;
 using namespace zbar;
+
 
 typedef struct
 {
@@ -35,7 +44,7 @@ void decode(Mat &im, vector<decodedObject>&decodedObjects)
   // Wrap image data in a zbar image
   Image image(im.cols, im.rows, "Y800", (uchar *)imGray.data, im.cols * im.rows);
 
-  // Scan the image for barcodes and QRCodes
+  // Scan the image for QRCodes
   int scann = scanner.scan(image);
 
   // Print results
@@ -43,11 +52,9 @@ void decode(Mat &im, vector<decodedObject>&decodedObjects)
   {
     decodedObject obj;
 
-    obj.type = symbol->get_type_name();
     obj.data = symbol->get_data();
 
-    // Print type and data
-    cout << "Type : " << obj.type << endl;
+    // Print data
     cout << "Data : " << obj.data << endl << endl;
     decodedObjects.push_back(obj);
   }
@@ -55,13 +62,13 @@ void decode(Mat &im, vector<decodedObject>&decodedObjects)
 
 int main(int argc, char *argv[])
 {
-
+/*
     // Read image
     Mat im;
     if(argc>1)
       im = imread(argv[1]);
     else
-      im = imread("/home/snir/Documents/QT project/scan2/capture.jpg");
+      im = imread("/home/snir/Documents/QT project/Projet/capture.jpg");
 
    // Variable for decoded objects
    vector<decodedObject> decodedObjects;
@@ -69,5 +76,23 @@ int main(int argc, char *argv[])
    // Find and decode barcodes and QR codes
    decode(im, decodedObjects);
 
+
+   return 0;
+*/
+   QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
+   db.setHostName("localhost");
+   db.setUserName("portail");
+   db.setPassword("portail");
+   db.setDatabaseName("Portail");
+   if(db.open()) {
+
+      cout << "Base de donnée connecté" << endl;
+
+
+   }else {
+
+       cout << "Base de donnée non-connecté" << endl;
+
+  }
    return 0;
  }
