@@ -1,4 +1,5 @@
 QT -= gui
+QT -= sql
 
 CONFIG += c++11 console
 CONFIG -= app_bundle
@@ -17,11 +18,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp
 
+#Libs pour les QR_code
 INCLUDEPATH += /usr/local/include/opencv2
+
 LIBS += -L/usr/opencv/lib -lopencv_core -lopencv_imgproc -lopencv_imgcodecs
 LIBS += -lopencv_highgui -lopencv_objdetect -lzbar
 
+#Libs pour la BDD
+LIBS += "/home/snir/Documents/QT project/Projet/PROJET/libs/lib/libmysql.lib"  # chemin complet de la lib
+LIBS += "/home/snir/Documents/QT project/Projet/PROJET/libs/lib/mysqlclient.lib"
+LIBS += "/home/snir/Documents/QT project/Projet/PROJET/libs/lib/libmylibsql.a"
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
+else: unix:!android: target.path = /home/pi
+#/opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
