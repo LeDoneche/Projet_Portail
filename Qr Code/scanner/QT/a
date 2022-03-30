@@ -1,0 +1,8 @@
+qDebug ("Connection", "Base de donnée connecté");
+
+        QSqlQuery requete ;
+           requete.exec ("SELECT * FROM Parking");
+
+                   while (requete.next ()){
+              qDebug () << requete.value(0).toInt();
+           }
