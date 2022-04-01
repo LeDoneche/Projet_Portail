@@ -15,7 +15,7 @@
       <form class="" action="desinscription.php" method="get">
 	  <input type="nom" id="nom" name="nom" placeholder="Nom" required /><br></br>
 	  <input type="prenom" id="prenom" name="prenom" placeholder="Prenom" required /><br></br>
-    
+    <br>Veuillez remplir ce formulaire pour ainsi desinscrire la personne voulu.</br><p></p>
       <input type="submit" name="button"></input>
     </form>
 
@@ -25,7 +25,7 @@
   <a href="index.html"><h2>Accueil</h2></a>
   <a href="inscription.html">Inscription</a>
   <a href="desinscription.html">Desinscription</a>
-  <a href="mail.html">L'Envoi QR Code par mail</a>
+  <a href="mail.html">Envoi QR Code par mail</a>
   <a id="lien_vieljeux" href="https://lycee-vieljeux.fr/"><IMG src="logo-lycee-vieljeux-small.png" height="100" width="170"></IMG></a>
 </div>
 
@@ -37,6 +37,7 @@
   </div>
 
 <?php
+	//id et mdp pour se connecter à la base de données
     $host = 'localhost';
     $username = 'portail';
     $password = 'portail';
