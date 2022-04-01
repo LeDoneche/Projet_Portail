@@ -1,8 +1,2 @@
-qDebug ("Connection", "Base de donnée connecté");
-
-        QSqlQuery requete ;
-           requete.exec ("SELECT * FROM Parking");
-
-                   while (requete.next ()){
-              qDebug () << requete.value(0).toInt();
-           }
+qrscan exemple code :
+https://www.codespeedy.com/detect-and-decode-qr-code-from-an-image-in-cpp-with-opencv/
