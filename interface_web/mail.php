@@ -15,7 +15,7 @@
       <form class="" action="mail.php" method="get">
 	  <input type="nom" id="nom" name="nom" placeholder="Nom" required /><br></br>
 	  <input type="prenom" id="prenom" name="prenom" placeholder="Prenom" required /><br></br>
-    
+    <br>Veuillez remplir ce formulaire pour ainsi générer et envoyer un mail à la personne voulu.</br><p></p>
       <input type="submit" name="button"></input>
     </form>
 
@@ -25,7 +25,7 @@
   <a href="index.html"><h2>Accueil</h2></a>
   <a href="inscription.html">Inscription</a>
   <a href="desinscription.html">Desinscription</a>
-  <a href="mail.html">L'Envoi QR Code par mail</a>
+  <a href="mail.html">Envoi QR Code par mail</a>
   <a id="lien_vieljeux" href="https://lycee-vieljeux.fr/"><IMG src="logo-lycee-vieljeux-small.png" height="100" width="170"></IMG></a>
 </div>
 
@@ -37,9 +37,9 @@
 </div>
 
 <?php
-
+	//on inclus la librairie 'phpqrcode' pour générer un qr code et l'enregistrerdans un fichier tmp sur la rasp
 	include('phpqrcode/qrlib.php');
-	
+	//id et mdp pour se connecter à la base de données
 	$servername = "localhost";
 	$username = "portail";
 	$password = "portail";
@@ -54,13 +54,14 @@
 	    die("Connection failed: " . $conn->connect_error);
 	  }
 
-	  $sql = "SELECT adresse_mail FROM Personnel WHERE nom = '$nom' AND prenom = '$prenom'";
+	  $sql = "SELECT adresse_mail,key FROM Personnel WHERE nom = '$nom' AND prenom = '$prenom'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
     $data = $row["adresse_mail"];
+    $data2 = $row["key"];
   }
 } else {
   echo "0 results";
@@ -69,9 +70,11 @@ if ($result->num_rows > 0) {
 $conn->close();
 
 $tempDir = "tmp/";
-$fileName = "QRCode_"."$nom"."_"."$prenom.png";
+$fileName = "QRCode_$nom"."_"."$prenom.png";
 $pngAbsoluteFilePath = $tempDir.$fileName;
 $urlRelativeFilePath = $tempDir.$fileName;
+
+QRcode::png($data2, $pngAbsoluteFilePath);
 
 $mail = "$data"; // Déclaration de l'adresse de destination.
 if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mail)) // On filtre les serveurs qui présentent des bogues.
