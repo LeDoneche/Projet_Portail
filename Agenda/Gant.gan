@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2022-02-28" view-index="0" gantt-divider-location="392" resource-divider-location="300" version="3.2.3230" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:3" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="256" order="0"/>
+        <field id="tpd4" name="Date de début" width="61" order="1"/>
+        <field id="tpd5" name="Date de fin" width="59" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="color.recent">
+            <![CDATA[#660066 #330066 #6600ff #cc00cc #ff00ff #009900 #00ff33 #f4f4f4 #ff9900 #9999ff]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="2022" month="2" date="13" type="HOLIDAY">
+            <![CDATA[Vacances sur 13/02/2022 00:00]]>
+        </date>
+        <date year="2022" month="2" date="14" type="HOLIDAY">
+            <![CDATA[Vacances sur 14/02/2022 00:00]]>
+        </date>
+        <date year="2022" month="2" date="12" type="HOLIDAY">
+            <![CDATA[Vacances sur 12/02/2022 00:00]]>
+        </date>
+        <date year="2022" month="2" date="15" type="HOLIDAY">
+            <![CDATA[Vacances sur 15/02/2022 00:00]]>
+        </date>
+        <date year="2022" month="2" date="17" type="HOLIDAY">
+            <![CDATA[Vacances sur 17/02/2022 00:00]]>
+        </date>
+        <date year="2022" month="2" date="16" type="HOLIDAY">
+            <![CDATA[Vacances sur 16/02/2022 00:00]]>
+        </date>
+        <date year="2022" month="2" date="18" type="HOLIDAY">
+            <![CDATA[Vacances sur 18/02/2022 00:00]]>
+        </date>
+        <date year="2022" month="2" date="22" type="HOLIDAY">
+            <![CDATA[Vacances sur 22/02/2022 00:00]]>
+        </date>
+        <date year="2022" month="2" date="21" type="HOLIDAY">
+            <![CDATA[Vacances sur 21/02/2022 00:00]]>
+        </date>
+        <date year="2022" month="2" date="19" type="HOLIDAY">
+            <![CDATA[Vacances sur 19/02/2022 00:00]]>
+        </date>
+        <date year="2022" month="2" date="20" type="HOLIDAY">
+            <![CDATA[Vacances sur 20/02/2022 00:00]]>
+        </date>
+        <date year="2022" month="2" date="23" type="HOLIDAY">
+            <![CDATA[Vacances sur 23/02/2022 00:00]]>
+        </date>
+        <date year="2022" month="2" date="24" type="HOLIDAY">
+            <![CDATA[Vacances sur 24/02/2022 00:00]]>
+        </date>
+        <date year="2022" month="2" date="25" type="HOLIDAY">
+            <![CDATA[Vacances sur 25/02/2022 00:00]]>
+        </date>
+        <date year="2022" month="2" date="26" type="HOLIDAY">
+            <![CDATA[Vacances sur 26/02/2022 00:00]]>
+        </date>
+        <date year="2022" month="2" date="27" type="HOLIDAY">
+            <![CDATA[Vacances sur 27/02/2022 00:00]]>
+        </date>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Recherche et préparation de la revue de projet 0" color="#8cb6ce" meeting="false" start="2022-01-28" duration="10" complete="0" thirdDate="2022-03-11" thirdDate-constraint="0" expand="true">
+            <depend id="18" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="18" name="Revue de projet 0" color="#8cb6ce" meeting="false" start="2022-02-11" duration="1" complete="0" thirdDate="2022-01-17" thirdDate-constraint="0" expand="true"/>
+        <task id="20" name="Générateur de QRcode" color="#8cb6ce" meeting="false" start="2022-02-28" duration="5" complete="0" thirdDate="2022-01-17" thirdDate-constraint="0" expand="true">
+            <depend id="31" type="2" difference="0" hardness="Strong"/>
+            <depend id="37" type="2" difference="0" hardness="Strong"/>
+            <depend id="40" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="23" name="Paramétrage de la caméra" color="#8cb6ce" meeting="false" start="2022-02-28" duration="5" complete="0" thirdDate="2022-01-17" thirdDate-constraint="0" expand="true">
+            <depend id="31" type="2" difference="0" hardness="Strong"/>
+            <depend id="37" type="2" difference="0" hardness="Strong"/>
+            <depend id="40" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="82" name="Partie BDD et interface web" color="#009900" meeting="false" start="2022-03-07" duration="25" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true">
+            <depend id="79" type="2" difference="0" hardness="Strong"/>
+            <task id="89" name="UML base de donnée" color="#009900" meeting="false" start="2022-03-07" duration="3" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true"/>
+            <task id="83" name="Installations des serveurs" color="#009900" meeting="false" start="2022-03-09" duration="3" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="false">
+                <task id="84" name="Apache 2.4.38" color="#009900" meeting="false" start="2022-03-09" duration="1" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true"/>
+                <task id="85" name="PHP 7.3.31" color="#009900" meeting="false" start="2022-03-09" duration="1" complete="0" thirdDate="2022-03-09" thirdDate-constraint="0" expand="true"/>
+                <task id="86" name="phpMyAdmin" color="#009900" meeting="false" start="2022-03-10" duration="1" complete="0" thirdDate="2022-03-10" thirdDate-constraint="0" expand="true"/>
+                <task id="87" name="MariaDB 10.3.34" color="#009900" meeting="false" start="2022-03-11" duration="1" complete="0" thirdDate="2022-03-11" thirdDate-constraint="0" expand="true"/>
+                <task id="88" name="postfix 3.4.14" color="#009900" meeting="false" start="2022-03-11" duration="1" complete="0" thirdDate="2022-03-11" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="90" name="Création de la base de données" color="#009900" meeting="false" start="2022-03-16" duration="1" complete="0" thirdDate="2022-02-07" thirdDate-constraint="0" expand="true"/>
+            <task id="91" name="Structure du site web" color="#009900" meeting="false" start="2022-03-17" duration="1" complete="0" thirdDate="2022-03-02" thirdDate-constraint="0" expand="true"/>
+            <task id="92" name="Création de l'index.html" color="#009900" meeting="false" start="2022-03-18" duration="1" complete="0" thirdDate="2022-02-28" thirdDate-constraint="0" expand="true"/>
+            <task id="93" name="fonctionnalité inscription du site" color="#009900" meeting="false" start="2022-03-21" duration="3" complete="0" thirdDate="2022-03-21" thirdDate-constraint="0" expand="true"/>
+            <task id="94" name="fonctionnalité desinscription du site" color="#009900" meeting="false" start="2022-03-24" duration="2" complete="0" thirdDate="2022-03-21" thirdDate-constraint="0" expand="true"/>
+            <task id="95" name="fonctionnalité envoie de mail qr code du site" color="#009900" meeting="false" start="2022-03-28" duration="8" complete="0" thirdDate="2022-03-28" thirdDate-constraint="0" expand="true"/>
+            <task id="96" name="Changement de la base de donnée" color="#009900" meeting="false" start="2022-04-07" duration="2" complete="0" thirdDate="2022-03-21" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="31" name="Récupération de l'image de la caméra, Détection d'un QRcode via la caméra" color="#ff9900" meeting="false" start="2022-03-07" duration="5" complete="0" thirdDate="2022-01-17" thirdDate-constraint="0" expand="true"/>
+        <task id="37" name="Configuration module ADAM-6060, Récupération des E/S" color="#ff00ff" meeting="false" start="2022-03-07" duration="5" complete="0" thirdDate="2022-01-17" thirdDate-constraint="0" expand="true"/>
+        <task id="40" name="Tests panneau Lumineux, Connection Raspberry pi" color="#9999ff" meeting="false" start="2022-03-07" duration="28" complete="0" thirdDate="2022-01-17" thirdDate-constraint="0" expand="true">
+            <task id="97" name="Code panneau lumineux" color="#000000" meeting="false" start="2022-03-14" duration="23" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
+                <task id="99" name="Code fonction recevoir place BDD et affichage" color="#660066" meeting="false" start="2022-03-14" duration="10" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true"/>
+                <task id="100" name="Code fonction QR code bon/pas bon" color="#660066" meeting="false" start="2022-03-25" duration="14" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="101" name="Recherche librairie QMYSQL" color="#660066" meeting="false" start="2022-03-14" duration="10" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true"/>
+            <task id="98" name="code connexion bdd" color="#660066" meeting="false" start="2022-03-07" duration="4" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="79" name="Revue de projet 1" color="#8cb6ce" meeting="false" start="2022-04-11" duration="5" complete="0" thirdDate="2022-03-23" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="mel" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="erwan" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="benjamin" function="Default:0" contacts="" phone=""/>
+        <resource id="3" name="téo" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="20" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="82" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="89" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="83" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="84" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="85" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="86" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="87" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="88" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="90" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="91" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="92" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="93" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="94" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="95" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="96" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="20" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="31" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="20" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="40" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="99" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="100" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="101" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="98" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="20" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="37" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
