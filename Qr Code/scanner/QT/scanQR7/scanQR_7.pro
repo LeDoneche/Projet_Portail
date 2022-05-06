@@ -22,6 +22,12 @@ SOURCES += \
         QRCode.cpp \
         main.cpp
 
+#Libs pour les QR_code
+INCLUDEPATH += /usr/local/include/opencv2
+
+LIBS += -L/usr/opencv/lib -lopencv_core -lopencv_imgproc -lopencv_imgcodecs
+LIBS += -lopencv_highgui -lopencv_objdetect -lzbar
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
