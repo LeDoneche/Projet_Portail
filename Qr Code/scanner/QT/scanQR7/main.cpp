@@ -2,9 +2,9 @@
 
 #include "header.h"
 
-#include "QRCode.h"
-#include "BDD.h"
-#include "PanneauLumineux.h"
+#include "qrcode.h"
+#include "bdd.h"
+#include "panneaulumineux.h"
 
 using namespace std;
 using namespace cv;
