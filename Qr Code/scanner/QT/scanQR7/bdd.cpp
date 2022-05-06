@@ -1,4 +1,4 @@
-#include "BDD.h"
+#include "bdd.h"
 
 using namespace std;
 
