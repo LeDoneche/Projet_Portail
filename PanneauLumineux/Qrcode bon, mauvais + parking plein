@@ -6,7 +6,7 @@ int main()
 
 
     //Message pour la limite de place
-    if (nb >= 50)
+    if (nb <= 0)
     {
         QString message4 = "Parking Plein";
         afficher(message4);
