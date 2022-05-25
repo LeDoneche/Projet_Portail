@@ -1,0 +1,9 @@
+/*
+     //Message pour non-présence du qrcode (si code tourne en boucle)
+    if (pas_QRCode == 12){
+        QString message5 = "Places: " + QString::number(nb)+"/50";
+        afficher(message5);
+
+    }
+    else {
+*/
