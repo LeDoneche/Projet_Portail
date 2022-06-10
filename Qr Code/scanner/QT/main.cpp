@@ -224,7 +224,7 @@ int main()
                 QString message2 = "QRCode Faux";
                 afficher(message2);
                 QThread::sleep(3);
-                return afficher(message); //je réaffiche le nombres de places restantes
+                 afficher(message); //je réaffiche le nombres de places restantes
             }
 
             //si qrcode présent dans la bdd
@@ -233,7 +233,7 @@ int main()
                 QString message3 = "QRCode Bon";
                 afficher(message3);
                 QThread::sleep(3);
-                return afficher(message); //je réaffiche le nombres de places restantes
+                 afficher(message); //je réaffiche le nombres de places restantes
 
             }
 
